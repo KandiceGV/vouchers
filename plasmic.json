@@ -167,6 +167,114 @@
           "cssFilePath": "plasmic/website_starter/PlasmicContactUs.module.css",
           "scheme": "blackbox",
           "componentType": "page"
+        },
+        {
+          "id": "cu9bSkvfJWdw",
+          "name": "GiftVouchers",
+          "type": "managed",
+          "projectId": "wdjrQSNRX7ys49KwqunuZ4",
+          "renderModuleFilePath": "plasmic/website_starter/PlasmicGiftVouchers.jsx",
+          "importSpec": {
+            "modulePath": "GiftVouchers.jsx"
+          },
+          "cssFilePath": "plasmic/website_starter/PlasmicGiftVouchers.module.css",
+          "scheme": "blackbox",
+          "componentType": "page"
+        },
+        {
+          "id": "QOsFSWOUIdhq",
+          "name": "PrepaidElectricity",
+          "type": "managed",
+          "projectId": "wdjrQSNRX7ys49KwqunuZ4",
+          "renderModuleFilePath": "plasmic/website_starter/PlasmicPrepaidElectricity.jsx",
+          "importSpec": {
+            "modulePath": "PrepaidElectricity.jsx"
+          },
+          "cssFilePath": "plasmic/website_starter/PlasmicPrepaidElectricity.module.css",
+          "scheme": "blackbox",
+          "componentType": "page"
+        },
+        {
+          "id": "44JppnCAf-bN",
+          "name": "StreamingServices",
+          "type": "managed",
+          "projectId": "wdjrQSNRX7ys49KwqunuZ4",
+          "renderModuleFilePath": "plasmic/website_starter/PlasmicStreamingServices.jsx",
+          "importSpec": {
+            "modulePath": "StreamingServices.jsx"
+          },
+          "cssFilePath": "plasmic/website_starter/PlasmicStreamingServices.module.css",
+          "scheme": "blackbox",
+          "componentType": "page"
+        },
+        {
+          "id": "ASEdLW6d9C-6",
+          "name": "ProductPage",
+          "type": "managed",
+          "projectId": "wdjrQSNRX7ys49KwqunuZ4",
+          "renderModuleFilePath": "plasmic/website_starter/PlasmicProductPage.jsx",
+          "importSpec": {
+            "modulePath": "ProductPage.jsx"
+          },
+          "cssFilePath": "plasmic/website_starter/PlasmicProductPage.module.css",
+          "scheme": "blackbox",
+          "componentType": "page"
+        },
+        {
+          "id": "A1LqozDiAk3W",
+          "name": "Select",
+          "type": "managed",
+          "projectId": "wdjrQSNRX7ys49KwqunuZ4",
+          "renderModuleFilePath": "plasmic/website_starter/PlasmicSelect.jsx",
+          "importSpec": {
+            "modulePath": "Select.jsx"
+          },
+          "cssFilePath": "plasmic/website_starter/PlasmicSelect.module.css",
+          "scheme": "blackbox",
+          "componentType": "component",
+          "plumeType": "select"
+        },
+        {
+          "id": "jVOoF1I3g5G3",
+          "name": "Select__Option",
+          "type": "managed",
+          "projectId": "wdjrQSNRX7ys49KwqunuZ4",
+          "renderModuleFilePath": "plasmic/website_starter/PlasmicSelect__Option.jsx",
+          "importSpec": {
+            "modulePath": "Select__Option.jsx"
+          },
+          "cssFilePath": "plasmic/website_starter/PlasmicSelect__Option.module.css",
+          "scheme": "blackbox",
+          "componentType": "component",
+          "plumeType": "select-option"
+        },
+        {
+          "id": "Y70Dlx0E-tGd",
+          "name": "Select__OptionGroup",
+          "type": "managed",
+          "projectId": "wdjrQSNRX7ys49KwqunuZ4",
+          "renderModuleFilePath": "plasmic/website_starter/PlasmicSelect__OptionGroup.jsx",
+          "importSpec": {
+            "modulePath": "Select__OptionGroup.jsx"
+          },
+          "cssFilePath": "plasmic/website_starter/PlasmicSelect__OptionGroup.module.css",
+          "scheme": "blackbox",
+          "componentType": "component",
+          "plumeType": "select-option-group"
+        },
+        {
+          "id": "n0rRlLO8UOyT",
+          "name": "Select__Overlay",
+          "type": "managed",
+          "projectId": "wdjrQSNRX7ys49KwqunuZ4",
+          "renderModuleFilePath": "plasmic/website_starter/PlasmicSelect__Overlay.jsx",
+          "importSpec": {
+            "modulePath": "Select__Overlay.jsx"
+          },
+          "cssFilePath": "plasmic/website_starter/PlasmicSelect__Overlay.module.css",
+          "scheme": "blackbox",
+          "componentType": "component",
+          "plumeType": "triggered-overlay"
         }
       ],
       "icons": [
@@ -229,6 +337,16 @@
           "id": "RPWCCLDq-60v",
           "name": "Icon9Icon",
           "moduleFilePath": "plasmic/website_starter/icons/PlasmicIcon__Icon9.jsx"
+        },
+        {
+          "id": "rTP78NEKwayd",
+          "name": "ChevronDownsvgIcon",
+          "moduleFilePath": "plasmic/website_starter/icons/PlasmicIcon__ChevronDownsvg.jsx"
+        },
+        {
+          "id": "XEZi6PUVmw5z",
+          "name": "ChevronUpsvgIcon",
+          "moduleFilePath": "plasmic/website_starter/icons/PlasmicIcon__ChevronUpsvg.jsx"
         }
       ],
       "images": [
@@ -351,6 +469,51 @@
           "id": "9qx-UBVCDXBv",
           "name": "image 3",
           "filePath": "plasmic/website_starter/images/image3.jpg"
+        },
+        {
+          "id": "Vzu70SZBCbY6",
+          "name": "vodacom.png",
+          "filePath": "plasmic/website_starter/images/vodacompng.png"
+        },
+        {
+          "id": "PTp9P63WDFmx",
+          "name": "cellc.jpg",
+          "filePath": "plasmic/website_starter/images/cellcjpg.jpg"
+        },
+        {
+          "id": "dGxpw-bZ9D3T",
+          "name": "MTN-logo-459AAF9482-seeklogo.com_.png",
+          "filePath": "plasmic/website_starter/images/mtnLogo459Aaf9482SeeklogocomPng.png"
+        },
+        {
+          "id": "zFkd5sBxe5YG",
+          "name": "mtn.jpg",
+          "filePath": "plasmic/website_starter/images/mtnjpg.jpg"
+        },
+        {
+          "id": "9JOY5dhkUsr5",
+          "name": "telkom.jpg",
+          "filePath": "plasmic/website_starter/images/telkomjpg.jpg"
+        },
+        {
+          "id": "OqeMK9XR5N61",
+          "name": "soleo.jpg",
+          "filePath": "plasmic/website_starter/images/soleojpg.jpg"
+        },
+        {
+          "id": "HhE6jMXsSnIA",
+          "name": "Eskom.jpg",
+          "filePath": "plasmic/website_starter/images/eskomjpg.jpg"
+        },
+        {
+          "id": "ubWRGlrOVxr6",
+          "name": "emalahleni.jpg",
+          "filePath": "plasmic/website_starter/images/emalahlenijpg.jpg"
+        },
+        {
+          "id": "ROZBpIeU6BBU",
+          "name": "magicthumb.png",
+          "filePath": "plasmic/website_starter/images/magicthumbpng.png"
         }
       ],
       "indirect": false,
