@@ -311,7 +311,7 @@ export const PlasmicProductPage = Object.assign(
     internalArgProps: PlasmicProductPage__ArgProps,
     // Page metadata
     pageMetadata: {
-      title: "Airtime",
+      title: "Product",
       description: "",
       ogImageSrc: "",
       canonical: ""
