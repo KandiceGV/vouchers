@@ -1,0 +1,19 @@
+{
+  "props": [
+    {
+      "name": "Column Width",
+      "type": "spacing",
+      "value": "25px",
+      "category": "spacing",
+      "meta": {
+        "projectId": "wdjrQSNRX7ys49KwqunuZ4",
+        "id": "U1uOv2mivztH"
+      }
+    }
+  ],
+  "global": {
+    "meta": {
+      "source": "plasmic.app"
+    }
+  }
+}
