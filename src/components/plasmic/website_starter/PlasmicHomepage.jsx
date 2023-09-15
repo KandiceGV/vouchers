@@ -352,19 +352,21 @@ function PlasmicHomepage__RenderFunc(props) {
                   loading={"lazy"}
                   onClick={async event => {
                     const $steps = {};
-                    $steps["goToPage"] = true
+                    $steps["goToAirtimeData"] = true
                       ? (() => {
-                          const actionArgs = {};
+                          const actionArgs = { destination: `/airtime` };
                           return (({ destination }) => {
                             location.assign(destination);
                           })?.apply(null, [actionArgs]);
                         })()
                       : undefined;
                     if (
-                      typeof $steps["goToPage"] === "object" &&
-                      typeof $steps["goToPage"].then === "function"
+                      typeof $steps["goToAirtimeData"] === "object" &&
+                      typeof $steps["goToAirtimeData"].then === "function"
                     ) {
-                      $steps["goToPage"] = await $steps["goToPage"];
+                      $steps["goToAirtimeData"] = await $steps[
+                        "goToAirtimeData"
+                      ];
                     }
                   }}
                   src={{
@@ -641,7 +643,6 @@ function makeNodeComponent(nodeName) {
         }),
       [props, nodeName]
     );
-
     return PlasmicHomepage__RenderFunc({
       variants,
       args,
