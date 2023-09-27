@@ -275,6 +275,62 @@
           "scheme": "blackbox",
           "componentType": "component",
           "plumeType": "triggered-overlay"
+        },
+        {
+          "id": "b5ylLk5hNhI1",
+          "name": "Vodacom",
+          "type": "managed",
+          "projectId": "wdjrQSNRX7ys49KwqunuZ4",
+          "renderModuleFilePath": "plasmic/vouchers/PlasmicVodacom.jsx",
+          "importSpec": {
+            "modulePath": "Vodacom.jsx"
+          },
+          "cssFilePath": "plasmic/vouchers/PlasmicVodacom.module.css",
+          "scheme": "blackbox",
+          "componentType": "page",
+          "path": "/vodacom"
+        },
+        {
+          "id": "nzbdD_rGXpli",
+          "name": "Telkom",
+          "type": "managed",
+          "projectId": "wdjrQSNRX7ys49KwqunuZ4",
+          "renderModuleFilePath": "plasmic/vouchers/PlasmicTelkom.jsx",
+          "importSpec": {
+            "modulePath": "Telkom.jsx"
+          },
+          "cssFilePath": "plasmic/vouchers/PlasmicTelkom.module.css",
+          "scheme": "blackbox",
+          "componentType": "page",
+          "path": "/telkom"
+        },
+        {
+          "id": "oCYMury2mJE3",
+          "name": "Mtn",
+          "type": "managed",
+          "projectId": "wdjrQSNRX7ys49KwqunuZ4",
+          "renderModuleFilePath": "plasmic/vouchers/PlasmicMtn.jsx",
+          "importSpec": {
+            "modulePath": "Mtn.jsx"
+          },
+          "cssFilePath": "plasmic/vouchers/PlasmicMtn.module.css",
+          "scheme": "blackbox",
+          "componentType": "page",
+          "path": "/MTN"
+        },
+        {
+          "id": "AIz-y0QfIj6_",
+          "name": "CellC",
+          "type": "managed",
+          "projectId": "wdjrQSNRX7ys49KwqunuZ4",
+          "renderModuleFilePath": "plasmic/vouchers/PlasmicCellC.jsx",
+          "importSpec": {
+            "modulePath": "CellC.jsx"
+          },
+          "cssFilePath": "plasmic/vouchers/PlasmicCellC.module.css",
+          "scheme": "blackbox",
+          "componentType": "page",
+          "path": "/cellc"
         }
       ],
       "icons": [
@@ -514,6 +570,91 @@
           "id": "ROZBpIeU6BBU",
           "name": "magicthumb.png",
           "filePath": "plasmic/website_starter/images/magicthumbpng.png"
+        },
+        {
+          "id": "cciPML46zJVW",
+          "name": "ANYTIME R2.png",
+          "filePath": "plasmic/vouchers/images/anytimeR2Png.png"
+        },
+        {
+          "id": "7BryvQNb02ae",
+          "name": "Airtime.png",
+          "filePath": "plasmic/vouchers/images/airtimepng.png"
+        },
+        {
+          "id": "9MUo90aYCJzY",
+          "name": "Data Bundles.png",
+          "filePath": "plasmic/vouchers/images/dataBundlespng.png"
+        },
+        {
+          "id": "sOIe_7x7DTrO",
+          "name": "Social Bundles.png",
+          "filePath": "plasmic/vouchers/images/socialBundlespng.png"
+        },
+        {
+          "id": "nScup2-naaYw",
+          "name": "Voice.png",
+          "filePath": "plasmic/vouchers/images/voicepng.png"
+        },
+        {
+          "id": "PluIBhVoGxUs",
+          "name": "Data.png",
+          "filePath": "plasmic/vouchers/images/datapng.png"
+        },
+        {
+          "id": "H8SgmTQ28xsh",
+          "name": "Social Bundles.png 2",
+          "filePath": "plasmic/vouchers/images/socialBundlespng2.png"
+        },
+        {
+          "id": "G3AwXF2sidfa",
+          "name": "WhatsApp.png",
+          "filePath": "plasmic/vouchers/images/whatsApppng.png"
+        },
+        {
+          "id": "Li3J6s8FJkW1",
+          "name": "MTN Voicey.png",
+          "filePath": "plasmic/vouchers/images/mtnVoiceypng.png"
+        },
+        {
+          "id": "54fHUtfieGDG",
+          "name": "MTN Data.png",
+          "filePath": "plasmic/vouchers/images/mtnDatapng.png"
+        },
+        {
+          "id": "Wva5UbSh-oSs",
+          "name": "MTN Social.png",
+          "filePath": "plasmic/vouchers/images/mtnSocialpng.png"
+        },
+        {
+          "id": "bvFFDMOPKL-0",
+          "name": "Cell C Voice.png",
+          "filePath": "plasmic/vouchers/images/cellCVoicepng.png"
+        },
+        {
+          "id": "LMlG0iO7rbQF",
+          "name": "Cell C Data.png",
+          "filePath": "plasmic/vouchers/images/cellCDatapng.png"
+        },
+        {
+          "id": "2Q7x-idRulhV",
+          "name": "Cell C WhatsApp.png",
+          "filePath": "plasmic/vouchers/images/cellCWhatsApppng.png"
+        },
+        {
+          "id": "8owLRSez-QC8",
+          "name": "GV Voucher.png",
+          "filePath": "plasmic/vouchers/images/gvVoucherpng.png"
+        },
+        {
+          "id": "7qU-KcA2mn06",
+          "name": "GV Wifi Voucher.png",
+          "filePath": "plasmic/vouchers/images/gvWifiVoucherpng.png"
+        },
+        {
+          "id": "bbKJb1V9ItRA",
+          "name": "big-contact-us-keyboard-button-contact-inscriptions-keyboard-button-green-button.jpg",
+          "filePath": "plasmic/vouchers/images/bigContactUsKeyboardButtonContactInscriptionsKeyboardButtonGreenButtonjpg.jpg"
         }
       ],
       "indirect": false,

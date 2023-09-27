@@ -334,7 +334,16 @@ function PlasmicShop__RenderFunc(props) {
                             }
                             style={{ color: "#143757" }}
                           >
-                            {"Streaming Services"}
+                            {"GV"}
+                          </span>
+                          <React.Fragment>{"\n"}</React.Fragment>
+                          <span
+                            className={
+                              "plasmic_default__all plasmic_default__span"
+                            }
+                            style={{ color: "#143757" }}
+                          >
+                            {"Home"}
                           </span>
                         </React.Fragment>
                       </h4>
@@ -377,7 +386,6 @@ function makeNodeComponent(nodeName) {
         }),
       [props, nodeName]
     );
-
     return PlasmicShop__RenderFunc({
       variants,
       args,

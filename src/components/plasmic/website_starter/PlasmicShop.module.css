@@ -21,6 +21,11 @@
 .shop > * {
   grid-column: 4;
 }
+@media (min-width: 0px) and (max-width: 768px) {
+  .shop > * {
+    grid-column: 4;
+  }
+}
 .headerr:global(.__wab_instance) {
   max-width: 100%;
   position: relative;
@@ -142,8 +147,13 @@
   }
 }
 @media (min-width: 0px) and (max-width: 768px) {
-  .columns > :global(.__wab_flex-container) > :nth-child(1n + 1) {
-    width: calc((100% - 1 * var(--plsmc-rc-col-gap, 0px)) * 12 / 12);
+  .columns > :global(.__wab_flex-container) > :nth-child(2n + 1) {
+    width: calc((100% - 2 * var(--plsmc-rc-col-gap, 0px)) * 6 / 12);
+  }
+}
+@media (min-width: 0px) and (max-width: 768px) {
+  .columns > :global(.__wab_flex-container) > :nth-child(2n + 2) {
+    width: calc((100% - 2 * var(--plsmc-rc-col-gap, 0px)) * 6 / 12);
   }
 }
 .column__duDKd {

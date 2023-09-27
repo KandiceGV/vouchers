@@ -139,6 +139,11 @@
   --mixin-Tbm32Kt37kYp_white-space: pre-wrap;
 }
 
+.plasmic_mixins {
+  --mixin-Ouohv3vtfBmM_white-space: pre-wrap;
+  --plasmic-mixin-link-font_white-space: var(--mixin-Ouohv3vtfBmM_white-space);
+}
+
 :where(.all) {
   display: block;
   white-space: inherit;

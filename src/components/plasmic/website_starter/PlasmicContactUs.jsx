@@ -24,7 +24,7 @@ import "@plasmicapp/react-web/lib/plasmic.css";
 import projectcss from "./plasmic_website_starter.module.css"; // plasmic-import: wdjrQSNRX7ys49KwqunuZ4/projectcss
 import sty from "./PlasmicContactUs.module.css"; // plasmic-import: 2vtbzB0tVFMs/css
 import Icon5Icon from "./icons/PlasmicIcon__Icon5"; // plasmic-import: r34WdRvBJ2B1/icon
-import image39QxUbvcdxBv from "./images/image3.jpg"; // plasmic-import: 9qx-UBVCDXBv/picture
+import bigContactUsKeyboardButtonContactInscriptionsKeyboardButtonGreenButtonjpgBbKJb1V9ItRa from "../vouchers/images/bigContactUsKeyboardButtonContactInscriptionsKeyboardButtonGreenButtonjpg.jpg"; // plasmic-import: bbKJb1V9ItRA/picture
 
 createPlasmicElementProxy;
 
@@ -79,7 +79,6 @@ function PlasmicContactUs__RenderFunc(props) {
 
     [$props, $ctx, $refs]
   );
-
   const $state = p.useDollarState(stateSpecs, {
     $props,
     $ctx,
@@ -141,9 +140,9 @@ function PlasmicContactUs__RenderFunc(props) {
                     displayWidth={"100%"}
                     loading={"lazy"}
                     src={{
-                      src: image39QxUbvcdxBv,
-                      fullWidth: 1920,
-                      fullHeight: 1275,
+                      src: bigContactUsKeyboardButtonContactInscriptionsKeyboardButtonGreenButtonjpgBbKJb1V9ItRa,
+                      fullWidth: 3860,
+                      fullHeight: 2574,
                       aspectRatio: undefined
                     }}
                   />
@@ -453,7 +452,6 @@ function makeNodeComponent(nodeName) {
         }),
       [props, nodeName]
     );
-
     return PlasmicContactUs__RenderFunc({
       variants,
       args,
