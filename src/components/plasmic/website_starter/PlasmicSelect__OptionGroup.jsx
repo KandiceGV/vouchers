@@ -20,6 +20,7 @@ import {
 } from "@plasmicapp/react-web";
 import Select__Option from "../../Select__Option"; // plasmic-import: jVOoF1I3g5G3/component
 import "@plasmicapp/react-web/lib/plasmic.css";
+import plasmic_antd_5_hostless_css from "../antd_5_hostless/plasmic_antd_5_hostless.module.css"; // plasmic-import: ohDidvG9XsCeFumugENU3J/projectcss
 import projectcss from "./plasmic_website_starter.module.css"; // plasmic-import: wdjrQSNRX7ys49KwqunuZ4/projectcss
 import sty from "./PlasmicSelect__OptionGroup.module.css"; // plasmic-import: Y70Dlx0E-tGd/css
 import SUPER__PlasmicSelect from "./PlasmicSelect"; // plasmic-import: A1LqozDiAk3W/render
@@ -65,7 +66,6 @@ function PlasmicSelect__OptionGroup__RenderFunc(props) {
 
     [$props, $ctx, $refs]
   );
-
   const $state = p.useDollarState(stateSpecs, {
     $props,
     $ctx,
@@ -87,6 +87,7 @@ function PlasmicSelect__OptionGroup__RenderFunc(props) {
         projectcss.plasmic_default_styles,
         projectcss.plasmic_mixins,
         projectcss.plasmic_tokens,
+        plasmic_antd_5_hostless_css.plasmic_tokens,
         sty.root
       )}
     >
@@ -110,7 +111,6 @@ function PlasmicSelect__OptionGroup__RenderFunc(props) {
               "isFirst",
               "isFirst"
             ),
-
             [sty.titleContainernoTitle]: hasVariant(
               $state,
               "noTitle",
@@ -182,7 +182,6 @@ function makeNodeComponent(nodeName) {
         }),
       [props, nodeName]
     );
-
     return PlasmicSelect__OptionGroup__RenderFunc({
       variants,
       args,

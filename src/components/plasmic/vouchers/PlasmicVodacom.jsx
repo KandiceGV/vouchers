@@ -18,10 +18,11 @@ import {
   deriveRenderOpts,
   ensureGlobalVariants
 } from "@plasmicapp/react-web";
-import Headerr from "../../Headerr"; // plasmic-import: 7oMbG7rPxeuI/component
+import Header from "../../Header"; // plasmic-import: 7oMbG7rPxeuI/component
 import Footer from "../../Footer"; // plasmic-import: t96iChT22ax_/component
 import { useScreenVariants as useScreenVariantshbagvQWqcZ69 } from "../website_starter/PlasmicGlobalVariant__Screen"; // plasmic-import: HbagvQWqcZ69/globalVariant
 import "@plasmicapp/react-web/lib/plasmic.css";
+import plasmic_antd_5_hostless_css from "../antd_5_hostless/plasmic_antd_5_hostless.module.css"; // plasmic-import: ohDidvG9XsCeFumugENU3J/projectcss
 import projectcss from "../website_starter/plasmic_website_starter.module.css"; // plasmic-import: wdjrQSNRX7ys49KwqunuZ4/projectcss
 import sty from "./PlasmicVodacom.module.css"; // plasmic-import: b5ylLk5hNhI1/css
 import airtimepng7BryvQNb02Ae from "./images/airtimepng.png"; // plasmic-import: 7BryvQNb02ae/picture
@@ -62,13 +63,14 @@ function PlasmicVodacom__RenderFunc(props) {
             projectcss.plasmic_default_styles,
             projectcss.plasmic_mixins,
             projectcss.plasmic_tokens,
+            plasmic_antd_5_hostless_css.plasmic_tokens,
             sty.shop
           )}
         >
-          <Headerr
-            data-plasmic-name={"headerr"}
-            data-plasmic-override={overrides.headerr}
-            className={classNames("__wab_instance", sty.headerr)}
+          <Header
+            data-plasmic-name={"header"}
+            data-plasmic-override={overrides.header}
+            className={classNames("__wab_instance", sty.header)}
           />
 
           <section className={classNames(projectcss.all, sty.section__rcSh1)}>
@@ -295,8 +297,8 @@ function PlasmicVodacom__RenderFunc(props) {
 }
 
 const PlasmicDescendants = {
-  shop: ["shop", "headerr", "h1", "columns", "footer"],
-  headerr: ["headerr"],
+  shop: ["shop", "header", "h1", "columns", "footer"],
+  header: ["header"],
   h1: ["h1"],
   columns: ["columns"],
   footer: ["footer"]
@@ -334,7 +336,7 @@ export const PlasmicVodacom = Object.assign(
   makeNodeComponent("shop"),
   {
     // Helper components rendering sub-elements
-    headerr: makeNodeComponent("headerr"),
+    header: makeNodeComponent("header"),
     h1: makeNodeComponent("h1"),
     columns: makeNodeComponent("columns"),
     footer: makeNodeComponent("footer"),

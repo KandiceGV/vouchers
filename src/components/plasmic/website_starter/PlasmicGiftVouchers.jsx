@@ -16,9 +16,10 @@ import {
   createPlasmicElementProxy,
   deriveRenderOpts
 } from "@plasmicapp/react-web";
-import Headerr from "../../Headerr"; // plasmic-import: 7oMbG7rPxeuI/component
+import Header from "../../Header"; // plasmic-import: 7oMbG7rPxeuI/component
 import Footer from "../../Footer"; // plasmic-import: t96iChT22ax_/component
 import "@plasmicapp/react-web/lib/plasmic.css";
+import plasmic_antd_5_hostless_css from "../antd_5_hostless/plasmic_antd_5_hostless.module.css"; // plasmic-import: ohDidvG9XsCeFumugENU3J/projectcss
 import projectcss from "./plasmic_website_starter.module.css"; // plasmic-import: wdjrQSNRX7ys49KwqunuZ4/projectcss
 import sty from "./PlasmicGiftVouchers.module.css"; // plasmic-import: cu9bSkvfJWdw/css
 import soleojpgOqeMk9Xr5N61 from "./images/soleojpg.jpg"; // plasmic-import: OqeMK9XR5N61/picture
@@ -54,13 +55,14 @@ function PlasmicGiftVouchers__RenderFunc(props) {
             projectcss.plasmic_default_styles,
             projectcss.plasmic_mixins,
             projectcss.plasmic_tokens,
+            plasmic_antd_5_hostless_css.plasmic_tokens,
             sty.shop
           )}
         >
-          <Headerr
-            data-plasmic-name={"headerr"}
-            data-plasmic-override={overrides.headerr}
-            className={classNames("__wab_instance", sty.headerr)}
+          <Header
+            data-plasmic-name={"header"}
+            data-plasmic-override={overrides.header}
+            className={classNames("__wab_instance", sty.header)}
           />
 
           <section className={classNames(projectcss.all, sty.section__kh2G)}>
@@ -183,8 +185,8 @@ function PlasmicGiftVouchers__RenderFunc(props) {
 }
 
 const PlasmicDescendants = {
-  shop: ["shop", "headerr", "h1", "columns", "column", "img", "h4", "footer"],
-  headerr: ["headerr"],
+  shop: ["shop", "header", "h1", "columns", "column", "img", "h4", "footer"],
+  header: ["header"],
   h1: ["h1"],
   columns: ["columns", "column", "img", "h4"],
   column: ["column", "img", "h4"],
@@ -205,7 +207,6 @@ function makeNodeComponent(nodeName) {
         }),
       [props, nodeName]
     );
-
     return PlasmicGiftVouchers__RenderFunc({
       variants,
       args,
@@ -226,7 +227,7 @@ export const PlasmicGiftVouchers = Object.assign(
   makeNodeComponent("shop"),
   {
     // Helper components rendering sub-elements
-    headerr: makeNodeComponent("headerr"),
+    header: makeNodeComponent("header"),
     h1: makeNodeComponent("h1"),
     columns: makeNodeComponent("columns"),
     column: makeNodeComponent("column"),

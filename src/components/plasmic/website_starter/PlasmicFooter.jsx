@@ -19,6 +19,7 @@ import {
 } from "@plasmicapp/react-web";
 import { useScreenVariants as useScreenVariantshbagvQWqcZ69 } from "./PlasmicGlobalVariant__Screen"; // plasmic-import: HbagvQWqcZ69/globalVariant
 import "@plasmicapp/react-web/lib/plasmic.css";
+import plasmic_antd_5_hostless_css from "../antd_5_hostless/plasmic_antd_5_hostless.module.css"; // plasmic-import: ohDidvG9XsCeFumugENU3J/projectcss
 import projectcss from "./plasmic_website_starter.module.css"; // plasmic-import: wdjrQSNRX7ys49KwqunuZ4/projectcss
 import sty from "./PlasmicFooter.module.css"; // plasmic-import: t96iChT22ax_/css
 
@@ -54,6 +55,7 @@ function PlasmicFooter__RenderFunc(props) {
         projectcss.plasmic_default_styles,
         projectcss.plasmic_mixins,
         projectcss.plasmic_tokens,
+        plasmic_antd_5_hostless_css.plasmic_tokens,
         sty.root
       )}
     >
@@ -105,7 +107,6 @@ function makeNodeComponent(nodeName) {
         }),
       [props, nodeName]
     );
-
     return PlasmicFooter__RenderFunc({
       variants,
       args,

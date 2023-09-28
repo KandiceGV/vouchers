@@ -19,6 +19,7 @@ import {
   deriveRenderOpts
 } from "@plasmicapp/react-web";
 import "@plasmicapp/react-web/lib/plasmic.css";
+import plasmic_antd_5_hostless_css from "../antd_5_hostless/plasmic_antd_5_hostless.module.css"; // plasmic-import: ohDidvG9XsCeFumugENU3J/projectcss
 import projectcss from "./plasmic_website_starter.module.css"; // plasmic-import: wdjrQSNRX7ys49KwqunuZ4/projectcss
 import sty from "./PlasmicSelect__Overlay.module.css"; // plasmic-import: n0rRlLO8UOyT/css
 import SUPER__PlasmicSelect from "./PlasmicSelect"; // plasmic-import: A1LqozDiAk3W/render
@@ -55,7 +56,6 @@ function PlasmicSelect__Overlay__RenderFunc(props) {
 
     [$props, $ctx, $refs]
   );
-
   const $state = p.useDollarState(stateSpecs, {
     $props,
     $ctx,
@@ -77,6 +77,7 @@ function PlasmicSelect__Overlay__RenderFunc(props) {
         projectcss.plasmic_default_styles,
         projectcss.plasmic_mixins,
         projectcss.plasmic_tokens,
+        plasmic_antd_5_hostless_css.plasmic_tokens,
         sty.root
       )}
     >
@@ -190,7 +191,6 @@ function makeNodeComponent(nodeName) {
         }),
       [props, nodeName]
     );
-
     return PlasmicSelect__Overlay__RenderFunc({
       variants,
       args,

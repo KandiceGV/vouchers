@@ -23,6 +23,7 @@ import Select__Overlay from "../../Select__Overlay"; // plasmic-import: n0rRlLO8
 import Select__Option from "../../Select__Option"; // plasmic-import: jVOoF1I3g5G3/component
 import Select__OptionGroup from "../../Select__OptionGroup"; // plasmic-import: Y70Dlx0E-tGd/component
 import "@plasmicapp/react-web/lib/plasmic.css";
+import plasmic_antd_5_hostless_css from "../antd_5_hostless/plasmic_antd_5_hostless.module.css"; // plasmic-import: ohDidvG9XsCeFumugENU3J/projectcss
 import projectcss from "./plasmic_website_starter.module.css"; // plasmic-import: wdjrQSNRX7ys49KwqunuZ4/projectcss
 import sty from "./PlasmicSelect.module.css"; // plasmic-import: A1LqozDiAk3W/css
 import ChevronDownsvgIcon from "./icons/PlasmicIcon__ChevronDownsvg"; // plasmic-import: rTP78NEKwayd/icon
@@ -98,7 +99,6 @@ function PlasmicSelect__RenderFunc(props) {
 
     [$props, $ctx, $refs]
   );
-
   const $state = p.useDollarState(stateSpecs, {
     $props,
     $ctx,
@@ -125,6 +125,7 @@ function PlasmicSelect__RenderFunc(props) {
           projectcss.plasmic_default_styles,
           projectcss.plasmic_mixins,
           projectcss.plasmic_tokens,
+          plasmic_antd_5_hostless_css.plasmic_tokens,
           sty.root,
           {
             [sty.root___focusVisibleWithin]: triggers.focusVisibleWithin_root,
@@ -137,21 +138,18 @@ function PlasmicSelect__RenderFunc(props) {
               "color",
               "softOrange"
             ),
-
             [sty.rootcolor_softPink]: hasVariant($state, "color", "softPink"),
             [sty.rootcolor_softPurple]: hasVariant(
               $state,
               "color",
               "softPurple"
             ),
-
             [sty.rootcolor_softRed]: hasVariant($state, "color", "softRed"),
             [sty.rootcolor_softYellow]: hasVariant(
               $state,
               "color",
               "softYellow"
             ),
-
             [sty.rootisOpen]: hasVariant($state, "isOpen", "isOpen")
           }
         )}
@@ -173,61 +171,51 @@ function PlasmicSelect__RenderFunc(props) {
                 "color",
                 "softBlue"
               ),
-
               [sty.triggercolor_softCyan]: hasVariant(
                 $state,
                 "color",
                 "softCyan"
               ),
-
               [sty.triggercolor_softGray]: hasVariant(
                 $state,
                 "color",
                 "softGray"
               ),
-
               [sty.triggercolor_softGreen]: hasVariant(
                 $state,
                 "color",
                 "softGreen"
               ),
-
               [sty.triggercolor_softOrange]: hasVariant(
                 $state,
                 "color",
                 "softOrange"
               ),
-
               [sty.triggercolor_softPink]: hasVariant(
                 $state,
                 "color",
                 "softPink"
               ),
-
               [sty.triggercolor_softPurple]: hasVariant(
                 $state,
                 "color",
                 "softPurple"
               ),
-
               [sty.triggercolor_softRed]: hasVariant(
                 $state,
                 "color",
                 "softRed"
               ),
-
               [sty.triggercolor_softYellow]: hasVariant(
                 $state,
                 "color",
                 "softYellow"
               ),
-
               [sty.triggerisDisabled]: hasVariant(
                 $state,
                 "isDisabled",
                 "isDisabled"
               ),
-
               [sty.triggerisOpen]: hasVariant($state, "isOpen", "isOpen")
             }
           )}
@@ -247,13 +235,11 @@ function PlasmicSelect__RenderFunc(props) {
                 "color",
                 "softBlue"
               ),
-
               [sty.contentContainerisDisabled]: hasVariant(
                 $state,
                 "isDisabled",
                 "isDisabled"
               ),
-
               [sty.contentContainershowPlaceholder]: hasVariant(
                 $state,
                 "showPlaceholder",
@@ -275,61 +261,51 @@ function PlasmicSelect__RenderFunc(props) {
                       "color",
                       "softBlue"
                     ),
-
                     [sty.slotTargetSelectedContentcolor_softCyan]: hasVariant(
                       $state,
                       "color",
                       "softCyan"
                     ),
-
                     [sty.slotTargetSelectedContentcolor_softGreen]: hasVariant(
                       $state,
                       "color",
                       "softGreen"
                     ),
-
                     [sty.slotTargetSelectedContentcolor_softOrange]: hasVariant(
                       $state,
                       "color",
                       "softOrange"
                     ),
-
                     [sty.slotTargetSelectedContentcolor_softPink]: hasVariant(
                       $state,
                       "color",
                       "softPink"
                     ),
-
                     [sty.slotTargetSelectedContentcolor_softPurple]: hasVariant(
                       $state,
                       "color",
                       "softPurple"
                     ),
-
                     [sty.slotTargetSelectedContentcolor_softRed]: hasVariant(
                       $state,
                       "color",
                       "softRed"
                     ),
-
                     [sty.slotTargetSelectedContentcolor_softYellow]: hasVariant(
                       $state,
                       "color",
                       "softYellow"
                     ),
-
                     [sty.slotTargetSelectedContentisDisabled]: hasVariant(
                       $state,
                       "isDisabled",
                       "isDisabled"
                     ),
-
                     [sty.slotTargetSelectedContentisOpen]: hasVariant(
                       $state,
                       "isOpen",
                       "isOpen"
                     ),
-
                     [sty.slotTargetSelectedContentshowPlaceholder]: hasVariant(
                       $state,
                       "showPlaceholder",
@@ -352,7 +328,6 @@ function PlasmicSelect__RenderFunc(props) {
                       "color",
                       "softBlue"
                     ),
-
                     [sty.slotTargetPlaceholdercolor_softOrange_showPlaceholder]:
                       hasVariant(
                         $state,
@@ -364,7 +339,6 @@ function PlasmicSelect__RenderFunc(props) {
                       "showPlaceholder",
                       "showPlaceholder"
                     ),
-
                     [sty.slotTargetPlaceholdershowPlaceholder_color_softBlue]:
                       hasVariant(
                         $state,
@@ -424,61 +398,51 @@ function PlasmicSelect__RenderFunc(props) {
                 "color",
                 "softBlue"
               ),
-
               [sty.dropdownIconcolor_softCyan]: hasVariant(
                 $state,
                 "color",
                 "softCyan"
               ),
-
               [sty.dropdownIconcolor_softGray]: hasVariant(
                 $state,
                 "color",
                 "softGray"
               ),
-
               [sty.dropdownIconcolor_softGreen]: hasVariant(
                 $state,
                 "color",
                 "softGreen"
               ),
-
               [sty.dropdownIconcolor_softOrange]: hasVariant(
                 $state,
                 "color",
                 "softOrange"
               ),
-
               [sty.dropdownIconcolor_softPink]: hasVariant(
                 $state,
                 "color",
                 "softPink"
               ),
-
               [sty.dropdownIconcolor_softPurple]: hasVariant(
                 $state,
                 "color",
                 "softPurple"
               ),
-
               [sty.dropdownIconcolor_softRed]: hasVariant(
                 $state,
                 "color",
                 "softRed"
               ),
-
               [sty.dropdownIconcolor_softYellow]: hasVariant(
                 $state,
                 "color",
                 "softYellow"
               ),
-
               [sty.dropdownIconisDisabled]: hasVariant(
                 $state,
                 "isDisabled",
                 "isDisabled"
               ),
-
               [sty.dropdownIconisOpen]: hasVariant($state, "isOpen", "isOpen")
             })}
             role={"img"}
@@ -574,7 +538,6 @@ function makeNodeComponent(nodeName) {
         }),
       [props, nodeName]
     );
-
     return PlasmicSelect__RenderFunc({
       variants,
       args,
