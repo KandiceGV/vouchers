@@ -87,6 +87,11 @@
 .section__xFz > * {
   grid-column: 4;
 }
+@media (min-width: 0px) and (max-width: 768px) {
+  .section__xFz > * {
+    grid-column: 4;
+  }
+}
 .columns {
   display: flex;
   position: relative;

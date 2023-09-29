@@ -132,6 +132,25 @@ function PlasmicCellC__RenderFunc(props) {
                       : "auto"
                   }
                   loading={"lazy"}
+                  onClick={async event => {
+                    const $steps = {};
+                    $steps["goToCellCAirtime"] = true
+                      ? (() => {
+                          const actionArgs = { destination: `/cellc-airtime` };
+                          return (({ destination }) => {
+                            location.assign(destination);
+                          })?.apply(null, [actionArgs]);
+                        })()
+                      : undefined;
+                    if (
+                      typeof $steps["goToCellCAirtime"] === "object" &&
+                      typeof $steps["goToCellCAirtime"].then === "function"
+                    ) {
+                      $steps["goToCellCAirtime"] = await $steps[
+                        "goToCellCAirtime"
+                      ];
+                    }
+                  }}
                   src={{
                     src: cellCVoicepngBvFfdmopkl0,
                     fullWidth: 408,
@@ -186,6 +205,23 @@ function PlasmicCellC__RenderFunc(props) {
                   displayMinWidth={"0"}
                   displayWidth={"auto"}
                   loading={"lazy"}
+                  onClick={async event => {
+                    const $steps = {};
+                    $steps["goToCellCData"] = true
+                      ? (() => {
+                          const actionArgs = { destination: `/cellc-data` };
+                          return (({ destination }) => {
+                            location.assign(destination);
+                          })?.apply(null, [actionArgs]);
+                        })()
+                      : undefined;
+                    if (
+                      typeof $steps["goToCellCData"] === "object" &&
+                      typeof $steps["goToCellCData"].then === "function"
+                    ) {
+                      $steps["goToCellCData"] = await $steps["goToCellCData"];
+                    }
+                  }}
                   src={{
                     src: cellCDatapngLMlG0IO7RbQf,
                     fullWidth: 408,
@@ -240,6 +276,25 @@ function PlasmicCellC__RenderFunc(props) {
                   displayMinWidth={"0"}
                   displayWidth={"auto"}
                   loading={"lazy"}
+                  onClick={async event => {
+                    const $steps = {};
+                    $steps["goToCellCSocials"] = true
+                      ? (() => {
+                          const actionArgs = { destination: `/cellc-socials` };
+                          return (({ destination }) => {
+                            location.assign(destination);
+                          })?.apply(null, [actionArgs]);
+                        })()
+                      : undefined;
+                    if (
+                      typeof $steps["goToCellCSocials"] === "object" &&
+                      typeof $steps["goToCellCSocials"].then === "function"
+                    ) {
+                      $steps["goToCellCSocials"] = await $steps[
+                        "goToCellCSocials"
+                      ];
+                    }
+                  }}
                   src={{
                     src: cellCWhatsApppng2Q7XIdRulhV,
                     fullWidth: 408,

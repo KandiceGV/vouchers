@@ -354,21 +354,19 @@ function PlasmicHomepage__RenderFunc(props) {
                   loading={"lazy"}
                   onClick={async event => {
                     const $steps = {};
-                    $steps["goToAirtimeData"] = true
+                    $steps["goToVodacom"] = true
                       ? (() => {
-                          const actionArgs = { destination: `/airtime` };
+                          const actionArgs = { destination: `/vodacom` };
                           return (({ destination }) => {
                             location.assign(destination);
                           })?.apply(null, [actionArgs]);
                         })()
                       : undefined;
                     if (
-                      typeof $steps["goToAirtimeData"] === "object" &&
-                      typeof $steps["goToAirtimeData"].then === "function"
+                      typeof $steps["goToVodacom"] === "object" &&
+                      typeof $steps["goToVodacom"].then === "function"
                     ) {
-                      $steps["goToAirtimeData"] = await $steps[
-                        "goToAirtimeData"
-                      ];
+                      $steps["goToVodacom"] = await $steps["goToVodacom"];
                     }
                   }}
                   src={{
@@ -390,6 +388,25 @@ function PlasmicHomepage__RenderFunc(props) {
                   displayMinWidth={"0"}
                   displayWidth={"auto"}
                   loading={"lazy"}
+                  onClick={async event => {
+                    const $steps = {};
+                    $steps["goToMunicipality"] = true
+                      ? (() => {
+                          const actionArgs = { destination: `/municipality` };
+                          return (({ destination }) => {
+                            location.assign(destination);
+                          })?.apply(null, [actionArgs]);
+                        })()
+                      : undefined;
+                    if (
+                      typeof $steps["goToMunicipality"] === "object" &&
+                      typeof $steps["goToMunicipality"].then === "function"
+                    ) {
+                      $steps["goToMunicipality"] = await $steps[
+                        "goToMunicipality"
+                      ];
+                    }
+                  }}
                   src={{
                     src: eskomcolourpngVnJOldLsVmP,
                     fullWidth: 123,
@@ -409,6 +426,23 @@ function PlasmicHomepage__RenderFunc(props) {
                   displayMinWidth={"0"}
                   displayWidth={"auto"}
                   loading={"lazy"}
+                  onClick={async event => {
+                    const $steps = {};
+                    $steps["goToMtn"] = true
+                      ? (() => {
+                          const actionArgs = { destination: `/MTN` };
+                          return (({ destination }) => {
+                            location.assign(destination);
+                          })?.apply(null, [actionArgs]);
+                        })()
+                      : undefined;
+                    if (
+                      typeof $steps["goToMtn"] === "object" &&
+                      typeof $steps["goToMtn"].then === "function"
+                    ) {
+                      $steps["goToMtn"] = await $steps["goToMtn"];
+                    }
+                  }}
                   src={{
                     src: mtncolourpngJdtgIEhW0Kxk,
                     fullWidth: 123,
@@ -428,6 +462,23 @@ function PlasmicHomepage__RenderFunc(props) {
                   displayMinWidth={"0"}
                   displayWidth={"auto"}
                   loading={"lazy"}
+                  onClick={async event => {
+                    const $steps = {};
+                    $steps["goToTelkom"] = true
+                      ? (() => {
+                          const actionArgs = { destination: `/telkom` };
+                          return (({ destination }) => {
+                            location.assign(destination);
+                          })?.apply(null, [actionArgs]);
+                        })()
+                      : undefined;
+                    if (
+                      typeof $steps["goToTelkom"] === "object" &&
+                      typeof $steps["goToTelkom"].then === "function"
+                    ) {
+                      $steps["goToTelkom"] = await $steps["goToTelkom"];
+                    }
+                  }}
                   src={{
                     src: telkcomcolourpngPnDktkl4ALJl,
                     fullWidth: 123,
@@ -449,6 +500,23 @@ function PlasmicHomepage__RenderFunc(props) {
                   displayMinWidth={"0"}
                   displayWidth={"auto"}
                   loading={"lazy"}
+                  onClick={async event => {
+                    const $steps = {};
+                    $steps["goToCellC"] = true
+                      ? (() => {
+                          const actionArgs = { destination: `/cellc` };
+                          return (({ destination }) => {
+                            location.assign(destination);
+                          })?.apply(null, [actionArgs]);
+                        })()
+                      : undefined;
+                    if (
+                      typeof $steps["goToCellC"] === "object" &&
+                      typeof $steps["goToCellC"].then === "function"
+                    ) {
+                      $steps["goToCellC"] = await $steps["goToCellC"];
+                    }
+                  }}
                   src={{
                     src: cecllccolourpng3LarGniVbkt,
                     fullWidth: 123,
@@ -468,6 +536,25 @@ function PlasmicHomepage__RenderFunc(props) {
                   displayMinWidth={"0"}
                   displayWidth={"auto"}
                   loading={"lazy"}
+                  onClick={async event => {
+                    const $steps = {};
+                    $steps["goToGiftVouchers"] = true
+                      ? (() => {
+                          const actionArgs = { destination: `/gift-vouchers` };
+                          return (({ destination }) => {
+                            location.assign(destination);
+                          })?.apply(null, [actionArgs]);
+                        })()
+                      : undefined;
+                    if (
+                      typeof $steps["goToGiftVouchers"] === "object" &&
+                      typeof $steps["goToGiftVouchers"].then === "function"
+                    ) {
+                      $steps["goToGiftVouchers"] = await $steps[
+                        "goToGiftVouchers"
+                      ];
+                    }
+                  }}
                   src={{
                     src: soleocolourpngIhKcdc3HpTVo,
                     fullWidth: 123,
@@ -487,6 +574,23 @@ function PlasmicHomepage__RenderFunc(props) {
                   displayMinWidth={"0"}
                   displayWidth={"auto"}
                   loading={"lazy"}
+                  onClick={async event => {
+                    const $steps = {};
+                    $steps["goToGvMagic"] = true
+                      ? (() => {
+                          const actionArgs = { destination: `/gvmagic` };
+                          return (({ destination }) => {
+                            location.assign(destination);
+                          })?.apply(null, [actionArgs]);
+                        })()
+                      : undefined;
+                    if (
+                      typeof $steps["goToGvMagic"] === "object" &&
+                      typeof $steps["goToGvMagic"].then === "function"
+                    ) {
+                      $steps["goToGvMagic"] = await $steps["goToGvMagic"];
+                    }
+                  }}
                   src={{
                     src: gvmagiccolourpngR0KteU1VBuJu,
                     fullWidth: 123,
@@ -506,6 +610,26 @@ function PlasmicHomepage__RenderFunc(props) {
                   displayMinWidth={"0"}
                   displayWidth={"auto"}
                   loading={"lazy"}
+                  onClick={async event => {
+                    const $steps = {};
+                    $steps["goToPrepaidElectricity"] = true
+                      ? (() => {
+                          const actionArgs = { destination: `/prepaid` };
+                          return (({ destination }) => {
+                            location.assign(destination);
+                          })?.apply(null, [actionArgs]);
+                        })()
+                      : undefined;
+                    if (
+                      typeof $steps["goToPrepaidElectricity"] === "object" &&
+                      typeof $steps["goToPrepaidElectricity"].then ===
+                        "function"
+                    ) {
+                      $steps["goToPrepaidElectricity"] = await $steps[
+                        "goToPrepaidElectricity"
+                      ];
+                    }
+                  }}
                   src={{
                     src: municipalpngElvCt4KfFQga,
                     fullWidth: 123,

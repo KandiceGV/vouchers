@@ -133,6 +133,23 @@ function PlasmicAirtimeData__RenderFunc(props) {
                       : "auto"
                   }
                   loading={"lazy"}
+                  onClick={async event => {
+                    const $steps = {};
+                    $steps["goToVodacom"] = true
+                      ? (() => {
+                          const actionArgs = { destination: `/vodacom` };
+                          return (({ destination }) => {
+                            location.assign(destination);
+                          })?.apply(null, [actionArgs]);
+                        })()
+                      : undefined;
+                    if (
+                      typeof $steps["goToVodacom"] === "object" &&
+                      typeof $steps["goToVodacom"].then === "function"
+                    ) {
+                      $steps["goToVodacom"] = await $steps["goToVodacom"];
+                    }
+                  }}
                   src={{
                     src: vodacompngVzu70SzbCbY6,
                     fullWidth: 300,
@@ -187,6 +204,23 @@ function PlasmicAirtimeData__RenderFunc(props) {
                   displayMinWidth={"0"}
                   displayWidth={"auto"}
                   loading={"lazy"}
+                  onClick={async event => {
+                    const $steps = {};
+                    $steps["goToCellC"] = true
+                      ? (() => {
+                          const actionArgs = { destination: `/cellc` };
+                          return (({ destination }) => {
+                            location.assign(destination);
+                          })?.apply(null, [actionArgs]);
+                        })()
+                      : undefined;
+                    if (
+                      typeof $steps["goToCellC"] === "object" &&
+                      typeof $steps["goToCellC"].then === "function"
+                    ) {
+                      $steps["goToCellC"] = await $steps["goToCellC"];
+                    }
+                  }}
                   src={{
                     src: cellcjpgPTp9P63WdFmx,
                     fullWidth: 500,
@@ -241,6 +275,23 @@ function PlasmicAirtimeData__RenderFunc(props) {
                   displayMinWidth={"0"}
                   displayWidth={"auto"}
                   loading={"lazy"}
+                  onClick={async event => {
+                    const $steps = {};
+                    $steps["goToMtn"] = true
+                      ? (() => {
+                          const actionArgs = { destination: `/MTN` };
+                          return (({ destination }) => {
+                            location.assign(destination);
+                          })?.apply(null, [actionArgs]);
+                        })()
+                      : undefined;
+                    if (
+                      typeof $steps["goToMtn"] === "object" &&
+                      typeof $steps["goToMtn"].then === "function"
+                    ) {
+                      $steps["goToMtn"] = await $steps["goToMtn"];
+                    }
+                  }}
                   src={{
                     src: mtnjpgZFkd5SBxe5Yg,
                     fullWidth: 500,
@@ -295,6 +346,23 @@ function PlasmicAirtimeData__RenderFunc(props) {
                   displayMinWidth={"0"}
                   displayWidth={"auto"}
                   loading={"lazy"}
+                  onClick={async event => {
+                    const $steps = {};
+                    $steps["goToTelkom"] = true
+                      ? (() => {
+                          const actionArgs = { destination: `/telkom` };
+                          return (({ destination }) => {
+                            location.assign(destination);
+                          })?.apply(null, [actionArgs]);
+                        })()
+                      : undefined;
+                    if (
+                      typeof $steps["goToTelkom"] === "object" &&
+                      typeof $steps["goToTelkom"].then === "function"
+                    ) {
+                      $steps["goToTelkom"] = await $steps["goToTelkom"];
+                    }
+                  }}
                   src={{
                     src: telkomjpg9Joy5DhkUsr5,
                     fullWidth: 500,

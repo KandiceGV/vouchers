@@ -28,7 +28,6 @@ import sty from "./PlasmicTelkom.module.css"; // plasmic-import: nzbdD_rGXpli/cs
 import voicepngNScup2NaaYw from "./images/voicepng.png"; // plasmic-import: nScup2-naaYw/picture
 import datapngPluIBhVoGxUs from "./images/datapng.png"; // plasmic-import: PluIBhVoGxUs/picture
 import socialBundlespng2H8SgmTq28Xsh from "./images/socialBundlespng2.png"; // plasmic-import: H8SgmTQ28xsh/picture
-import whatsApppngG3AwXf2Sidfa from "./images/whatsApppng.png"; // plasmic-import: G3AwXF2sidfa/picture
 
 createPlasmicElementProxy;
 
@@ -133,6 +132,25 @@ function PlasmicTelkom__RenderFunc(props) {
                       : "auto"
                   }
                   loading={"lazy"}
+                  onClick={async event => {
+                    const $steps = {};
+                    $steps["goToTelkomAirtime"] = true
+                      ? (() => {
+                          const actionArgs = { destination: `/telkom-airtime` };
+                          return (({ destination }) => {
+                            location.assign(destination);
+                          })?.apply(null, [actionArgs]);
+                        })()
+                      : undefined;
+                    if (
+                      typeof $steps["goToTelkomAirtime"] === "object" &&
+                      typeof $steps["goToTelkomAirtime"].then === "function"
+                    ) {
+                      $steps["goToTelkomAirtime"] = await $steps[
+                        "goToTelkomAirtime"
+                      ];
+                    }
+                  }}
                   src={{
                     src: voicepngNScup2NaaYw,
                     fullWidth: 408,
@@ -187,6 +205,23 @@ function PlasmicTelkom__RenderFunc(props) {
                   displayMinWidth={"0"}
                   displayWidth={"auto"}
                   loading={"lazy"}
+                  onClick={async event => {
+                    const $steps = {};
+                    $steps["goToTelkomData"] = true
+                      ? (() => {
+                          const actionArgs = { destination: `/telkom-data` };
+                          return (({ destination }) => {
+                            location.assign(destination);
+                          })?.apply(null, [actionArgs]);
+                        })()
+                      : undefined;
+                    if (
+                      typeof $steps["goToTelkomData"] === "object" &&
+                      typeof $steps["goToTelkomData"].then === "function"
+                    ) {
+                      $steps["goToTelkomData"] = await $steps["goToTelkomData"];
+                    }
+                  }}
                   src={{
                     src: datapngPluIBhVoGxUs,
                     fullWidth: 408,
@@ -241,6 +276,25 @@ function PlasmicTelkom__RenderFunc(props) {
                   displayMinWidth={"0"}
                   displayWidth={"auto"}
                   loading={"lazy"}
+                  onClick={async event => {
+                    const $steps = {};
+                    $steps["goToTelkomSocials"] = true
+                      ? (() => {
+                          const actionArgs = { destination: `/telkom-socials` };
+                          return (({ destination }) => {
+                            location.assign(destination);
+                          })?.apply(null, [actionArgs]);
+                        })()
+                      : undefined;
+                    if (
+                      typeof $steps["goToTelkomSocials"] === "object" &&
+                      typeof $steps["goToTelkomSocials"].then === "function"
+                    ) {
+                      $steps["goToTelkomSocials"] = await $steps[
+                        "goToTelkomSocials"
+                      ];
+                    }
+                  }}
                   src={{
                     src: socialBundlespng2H8SgmTq28Xsh,
                     fullWidth: 408,
@@ -283,43 +337,6 @@ function PlasmicTelkom__RenderFunc(props) {
                     <React.Fragment>{""}</React.Fragment>
                   </React.Fragment>
                 </div>
-              </div>
-              <div className={classNames(projectcss.all, sty.column__yn1Iz)}>
-                <p.PlasmicImg
-                  alt={""}
-                  className={classNames(sty.img___5TNaX)}
-                  displayHeight={"auto"}
-                  displayMaxHeight={"none"}
-                  displayMaxWidth={"100%"}
-                  displayMinHeight={"0"}
-                  displayMinWidth={"0"}
-                  displayWidth={"auto"}
-                  loading={"lazy"}
-                  src={{
-                    src: whatsApppngG3AwXf2Sidfa,
-                    fullWidth: 408,
-                    fullHeight: 408,
-                    aspectRatio: undefined
-                  }}
-                />
-
-                <h4
-                  className={classNames(
-                    projectcss.all,
-                    projectcss.h4,
-                    projectcss.__wab_text,
-                    sty.h4__advkH
-                  )}
-                >
-                  <React.Fragment>
-                    <span
-                      className={"plasmic_default__all plasmic_default__span"}
-                      style={{ color: "#143757" }}
-                    >
-                      {"WhatsApp"}
-                    </span>
-                  </React.Fragment>
-                </h4>
               </div>
             </p.Stack>
           </section>

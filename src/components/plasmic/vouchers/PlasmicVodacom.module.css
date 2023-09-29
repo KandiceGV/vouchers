@@ -182,6 +182,7 @@
 @media (min-width: 0px) and (max-width: 768px) {
   .img___0F34C {
     width: 500px;
+    border-radius: 15px;
   }
 }
 .text__h712E {
@@ -222,6 +223,11 @@
 .img__klZd8 > :global(.__wab_img-spacer) > img {
   object-fit: cover;
 }
+@media (min-width: 0px) and (max-width: 768px) {
+  .img__klZd8 {
+    border-radius: 15px;
+  }
+}
 .text__cvax3 {
   position: relative;
   width: 100%;
@@ -259,6 +265,11 @@
 }
 .img__adsah > :global(.__wab_img-spacer) > img {
   object-fit: cover;
+}
+@media (min-width: 0px) and (max-width: 768px) {
+  .img__adsah {
+    border-radius: 15px;
+  }
 }
 .text__yVyS3 {
   position: relative;

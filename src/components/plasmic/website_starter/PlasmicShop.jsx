@@ -123,6 +123,25 @@ function PlasmicShop__RenderFunc(props) {
                   displayMinWidth={"0"}
                   displayWidth={"auto"}
                   loading={"lazy"}
+                  onClick={async event => {
+                    const $steps = {};
+                    $steps["goToAirtimeData"] = true
+                      ? (() => {
+                          const actionArgs = { destination: `/airtime` };
+                          return (({ destination }) => {
+                            location.assign(destination);
+                          })?.apply(null, [actionArgs]);
+                        })()
+                      : undefined;
+                    if (
+                      typeof $steps["goToAirtimeData"] === "object" &&
+                      typeof $steps["goToAirtimeData"].then === "function"
+                    ) {
+                      $steps["goToAirtimeData"] = await $steps[
+                        "goToAirtimeData"
+                      ];
+                    }
+                  }}
                   src={{
                     src: airtimethumbpngMntDusVpT46Z,
                     fullWidth: 500,
@@ -186,6 +205,25 @@ function PlasmicShop__RenderFunc(props) {
                   displayMinWidth={"0"}
                   displayWidth={"auto"}
                   loading={"lazy"}
+                  onClick={async event => {
+                    const $steps = {};
+                    $steps["goToGiftVouchers"] = true
+                      ? (() => {
+                          const actionArgs = { destination: `/gift-vouchers` };
+                          return (({ destination }) => {
+                            location.assign(destination);
+                          })?.apply(null, [actionArgs]);
+                        })()
+                      : undefined;
+                    if (
+                      typeof $steps["goToGiftVouchers"] === "object" &&
+                      typeof $steps["goToGiftVouchers"].then === "function"
+                    ) {
+                      $steps["goToGiftVouchers"] = await $steps[
+                        "goToGiftVouchers"
+                      ];
+                    }
+                  }}
                   src={{
                     src: giftpng9RqW1GhkFfp,
                     fullWidth: 500,
@@ -249,6 +287,25 @@ function PlasmicShop__RenderFunc(props) {
                   displayMinWidth={"0"}
                   displayWidth={"auto"}
                   loading={"lazy"}
+                  onClick={async event => {
+                    const $steps = {};
+                    $steps["goToMunicipality"] = true
+                      ? (() => {
+                          const actionArgs = { destination: `/municipality` };
+                          return (({ destination }) => {
+                            location.assign(destination);
+                          })?.apply(null, [actionArgs]);
+                        })()
+                      : undefined;
+                    if (
+                      typeof $steps["goToMunicipality"] === "object" &&
+                      typeof $steps["goToMunicipality"].then === "function"
+                    ) {
+                      $steps["goToMunicipality"] = await $steps[
+                        "goToMunicipality"
+                      ];
+                    }
+                  }}
                   src={{
                     src: electricitypng9TpHi7N0Vte9,
                     fullWidth: 500,
@@ -303,6 +360,23 @@ function PlasmicShop__RenderFunc(props) {
                   displayMinWidth={"0"}
                   displayWidth={"auto"}
                   loading={"lazy"}
+                  onClick={async event => {
+                    const $steps = {};
+                    $steps["goToGvHome"] = true
+                      ? (() => {
+                          const actionArgs = { destination: `/gvhome` };
+                          return (({ destination }) => {
+                            location.assign(destination);
+                          })?.apply(null, [actionArgs]);
+                        })()
+                      : undefined;
+                    if (
+                      typeof $steps["goToGvHome"] === "object" &&
+                      typeof $steps["goToGvHome"].then === "function"
+                    ) {
+                      $steps["goToGvHome"] = await $steps["goToGvHome"];
+                    }
+                  }}
                   src={{
                     src: streamingpngOeYcDuJp5Q8T,
                     fullWidth: 500,

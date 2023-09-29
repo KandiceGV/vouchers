@@ -132,6 +132,23 @@ function PlasmicVodacom__RenderFunc(props) {
                       : "auto"
                   }
                   loading={"lazy"}
+                  onClick={async event => {
+                    const $steps = {};
+                    $steps["goToPage"] = true
+                      ? (() => {
+                          const actionArgs = {};
+                          return (({ destination }) => {
+                            location.assign(destination);
+                          })?.apply(null, [actionArgs]);
+                        })()
+                      : undefined;
+                    if (
+                      typeof $steps["goToPage"] === "object" &&
+                      typeof $steps["goToPage"].then === "function"
+                    ) {
+                      $steps["goToPage"] = await $steps["goToPage"];
+                    }
+                  }}
                   src={{
                     src: airtimepng7BryvQNb02Ae,
                     fullWidth: 408,
@@ -186,6 +203,25 @@ function PlasmicVodacom__RenderFunc(props) {
                   displayMinWidth={"0"}
                   displayWidth={"auto"}
                   loading={"lazy"}
+                  onClick={async event => {
+                    const $steps = {};
+                    $steps["goToVodacomData"] = true
+                      ? (() => {
+                          const actionArgs = { destination: `/vodacom-data` };
+                          return (({ destination }) => {
+                            location.assign(destination);
+                          })?.apply(null, [actionArgs]);
+                        })()
+                      : undefined;
+                    if (
+                      typeof $steps["goToVodacomData"] === "object" &&
+                      typeof $steps["goToVodacomData"].then === "function"
+                    ) {
+                      $steps["goToVodacomData"] = await $steps[
+                        "goToVodacomData"
+                      ];
+                    }
+                  }}
                   src={{
                     src: dataBundlespng9MUo90AYcJzY,
                     fullWidth: 408,
@@ -240,6 +276,25 @@ function PlasmicVodacom__RenderFunc(props) {
                   displayMinWidth={"0"}
                   displayWidth={"auto"}
                   loading={"lazy"}
+                  onClick={async event => {
+                    const $steps = {};
+                    $steps["goToVodacomSocial"] = true
+                      ? (() => {
+                          const actionArgs = { destination: `/vodacom-social` };
+                          return (({ destination }) => {
+                            location.assign(destination);
+                          })?.apply(null, [actionArgs]);
+                        })()
+                      : undefined;
+                    if (
+                      typeof $steps["goToVodacomSocial"] === "object" &&
+                      typeof $steps["goToVodacomSocial"].then === "function"
+                    ) {
+                      $steps["goToVodacomSocial"] = await $steps[
+                        "goToVodacomSocial"
+                      ];
+                    }
+                  }}
                   src={{
                     src: socialBundlespngSOIe7X7DTrO,
                     fullWidth: 408,

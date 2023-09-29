@@ -132,6 +132,23 @@ function PlasmicMtn__RenderFunc(props) {
                       : "auto"
                   }
                   loading={"lazy"}
+                  onClick={async event => {
+                    const $steps = {};
+                    $steps["goToMtnAirtime"] = true
+                      ? (() => {
+                          const actionArgs = { destination: `/MTN-airtime` };
+                          return (({ destination }) => {
+                            location.assign(destination);
+                          })?.apply(null, [actionArgs]);
+                        })()
+                      : undefined;
+                    if (
+                      typeof $steps["goToMtnAirtime"] === "object" &&
+                      typeof $steps["goToMtnAirtime"].then === "function"
+                    ) {
+                      $steps["goToMtnAirtime"] = await $steps["goToMtnAirtime"];
+                    }
+                  }}
                   src={{
                     src: mtnVoiceypngLi3J6S8FJkW1,
                     fullWidth: 408,
@@ -186,6 +203,23 @@ function PlasmicMtn__RenderFunc(props) {
                   displayMinWidth={"0"}
                   displayWidth={"auto"}
                   loading={"lazy"}
+                  onClick={async event => {
+                    const $steps = {};
+                    $steps["goToMtnData"] = true
+                      ? (() => {
+                          const actionArgs = { destination: `/MTN-data` };
+                          return (({ destination }) => {
+                            location.assign(destination);
+                          })?.apply(null, [actionArgs]);
+                        })()
+                      : undefined;
+                    if (
+                      typeof $steps["goToMtnData"] === "object" &&
+                      typeof $steps["goToMtnData"].then === "function"
+                    ) {
+                      $steps["goToMtnData"] = await $steps["goToMtnData"];
+                    }
+                  }}
                   src={{
                     src: mtnDatapng54FHUtfieGdg,
                     fullWidth: 408,
@@ -240,6 +274,25 @@ function PlasmicMtn__RenderFunc(props) {
                   displayMinWidth={"0"}
                   displayWidth={"auto"}
                   loading={"lazy"}
+                  onClick={async event => {
+                    const $steps = {};
+                    $steps["goToMtnSocialBundles"] = true
+                      ? (() => {
+                          const actionArgs = { destination: `/MTN-social` };
+                          return (({ destination }) => {
+                            location.assign(destination);
+                          })?.apply(null, [actionArgs]);
+                        })()
+                      : undefined;
+                    if (
+                      typeof $steps["goToMtnSocialBundles"] === "object" &&
+                      typeof $steps["goToMtnSocialBundles"].then === "function"
+                    ) {
+                      $steps["goToMtnSocialBundles"] = await $steps[
+                        "goToMtnSocialBundles"
+                      ];
+                    }
+                  }}
                   src={{
                     src: mtnSocialpngWva5UbShOSs,
                     fullWidth: 408,
